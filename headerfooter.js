@@ -18,7 +18,7 @@ $(document).ready(function() {
 	$('body').prepend(header);
 
 	var footer = 
-	"<a href='https://ko-fi.com/X7X53BJ07' target='_blank' class='donation button'><img src='../images/general/support-button.png' height='42' style='text-align:center;height:42px;display:block;' alt='Support Cantonese Tools at ko-fi.com' /></a>"+
+	"<a href='https://ko-fi.com/X7X53BJ07' target='_blank' class='donation button'><img src='images/general/support-button.png' height='42' style='text-align:center;height:42px;display:block;' alt='Support Cantonese Tools at ko-fi.com' /></a>"+
 	''+
 	'<hr>'+
 	'<div id="site-footer">'+
@@ -35,7 +35,7 @@ $(document).ready(function() {
 			'<a href="about.html">About</a> | '+
 			'<a href="mailto:cantonese.tools@gmail.com">Contact</a>'+
 		'</p>'+
-		'<p><em>© Cantonese Tools, 2020 – Updated Mar 2021</em></p>'+
+		'<p><em>© Cantonese Tools, 2020 – Updated Jan 2022</em></p>'+
 	'</div>'
 
 	$('body').append(footer);
