@@ -1,0 +1,341 @@
+p {}
+li {
+	margin: 1em 0;
+}
+span.nobreak {
+	white-space: nowrap;
+}
+a.cta {
+	border: 4px solid #1e87f0;
+	background-color: #1e87f0;
+	color: white;
+	padding: 8px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.15em;
+	display: inline-block;
+}
+a.cta:hover {
+	border: 6px solid #1e87f0;
+	background-color: white;
+	color: #1e87f0;
+}
+#site-header, #site-footer, div.page {
+	max-width: 850px;
+	margin: auto;
+	padding: 0 10%;
+}
+body.home #site-header a.index,
+body.ios #site-header a.ios,
+body.mac #site-header a.mac,
+body.android #site-header a.android, 
+body.translate #site-header a.translate
+{
+	border-bottom: 2px solid;
+}
+body.home #site-footer a.index,
+body.ios #site-footer a.ios,
+body.mac #site-footer a.mac,
+body.android #site-footer a.android, 
+body.translate #site-header a.translate
+{
+	border-bottom: 2px solid;
+}
+div.header-section hr {
+	margin-bottom: 0;
+}
+#site-header {
+	/*padding-top: 1em;*/
+}
+#site-header ul {
+	padding: 0;
+	margin-bottom: 0;
+}
+#site-header ul li {
+	display: inline-block;
+	padding-right: 2.5em;
+	margin-bottom: 0;
+}
+#site-header span.unavailable,
+#site-footer span.unavailable
+ {
+	text-decoration: line-through;
+}
+#site-footer {
+	text-align: center;
+}
+div.page {
+	padding: 5% 10%;
+}
+
+/* PAGE: ABOUT - OVERRIDES */
+div.page.about {
+	padding: initial;
+	max-width: initial;
+}
+
+/* PAGE: HOME */
+div.page.home .medium-links {
+	display: flex;
+	justify-content: space-between;
+}
+	div.page.home .medium-links a:hover {
+		border: none;
+	}
+	div.page.home .medium-links a span {
+		border-bottom: 4px solid transparent;
+	}
+	div.page.home .medium-links a:hover span {
+		border-bottom: 4px solid;
+	}
+	div.page.home .medium-links > div {
+		text-align: center;
+		/*border: 1px solid;*/
+		max-width: 20%;
+	}
+	div.page.home .medium-links > div img {
+		max-height: 80px;
+	}
+	div.page.home .medium-links > div span {
+		padding: 5px;
+		display: block;
+	}
+
+div.page.home .banner {
+	/*padding-bottom: 100%;*/
+	background-color: cyan;
+	height: 200px;
+	background: url('../images/about/Hong-Kong_Hero.jpg') center center no-repeat fixed;
+	/*background: url('../images/index/guangdong-embroidery-red.jpg') center center no-repeat fixed;*/
+	/*background: url('../images/index/guangdong-embroidery-bird.jpg') center center no-repeat fixed;*/
+	background-size: cover;
+	border-radius: 20px;
+}
+	@media only screen and (max-width: 480px) {
+		div.page.home .banner {
+			background: url('../images/about/Hong-Kong_Hero.jpg');
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
+	}
+
+div.page.home .capabilities {
+	/*background-color: yellow;*/
+	padding-top: 0.5em;
+}
+	div.page.home .capabilities > div {
+		position: relative;
+		display: inline-table;
+		max-width: 44%;
+		padding-right: 5%;
+		padding-bottom: 2em;
+	}
+	div.page.home .capabilities span.fa {
+		font-size: 3em;
+		/*text-align: center;*/
+		/*width: 100%;*/
+	}
+	div.page.home .capabilities p.title {
+		/*text-align: center;*/
+		font-weight: bold;
+		/*text-transform: uppercase;*/
+		float: left;
+		position: absolute;
+		top: -0.5em;
+		left: 5em;
+	}
+	div.page.home .capabilities p.description {
+		color: #666;
+	}
+
+table.support {
+	text-align: center;
+}
+	table.support th {
+		padding: 20px 10px;
+		vertical-align: top;
+	}
+	table.support th img {
+		max-width: 50%;
+	}
+	table.support th a {
+		border: none;
+		
+	}
+	table.support th span {
+		display: block;
+		border-bottom: 4px solid transparent;
+	}
+	table.support th a:hover span {
+		border-bottom: 4px solid;
+	}
+	table.support td.high {
+		background-color: #d3ffce;
+	}
+	table.support td.mid {
+		background-color: #ffface;
+	}
+	table.support td.low {
+		background-color: #ffced3;
+	}
+	table.support tr:last-child td {
+		height: 5em;
+	}
+
+
+	@media only screen and (max-width: 480px) {
+		table.support {
+			font-size: 0.7em;
+		}
+		table a.cta {
+			border: 1px solid;
+			padding: 6px;
+			letter-spacing: initial;
+		}
+	}
+
+
+/* PAGE: INSTRUCTIONS */
+div.page.instructions .section-links {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+}
+div.page.instructions .section-links > .section-link {
+	display: table-cell;
+	text-align: center;
+}
+	.page.instructions .section-link {
+		padding: 1.5vw;
+	}
+	.page.instructions .section-link span {
+		display: block;
+	}
+	.page.instructions .section-link span.fa {
+		font-size: 7vw;
+	}
+	.page.instructions .section-link span.description {
+		color: #666;
+	}
+	.page.instructions .section-link span.status {
+		font-size: 2vw;
+		border: 2px solid;
+		border-radius: 1.5em;
+		width: 1.5em;
+		height: 1.5em;
+		margin: auto;
+		margin-top: 0.5em;
+		/*font-weight: bold;*/
+		color: limegreen;
+	}
+	.page.instructions .section-link span.status.weak {
+		color: orange;
+	}
+	.page.instructions .section-link span.status.none {
+		color: red;
+	}
+
+div.page.instructions img {
+	max-width: 300px;
+	display: block;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	margin: 1em 0;
+}
+	div.page.instructions.windows img,
+	div.page.instructions.mac img {
+		max-width: 450px;
+	}
+div.page.instructions img.no-border {
+	border: none;
+}
+div.page.instructions img.full-width {
+	max-width: 100%;
+	width: 100%;
+}
+div.page.instructions table,
+div.page.instructions table tr,
+div.page.instructions table td {
+	border: none;
+	vertical-align: top;
+}
+div.page.instructions table img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+/* PAGE: TRANSLATE */
+div.page.translate div.cover {
+	background: #2e8540;
+	color: white;
+	font-size: 5vw;
+	border-radius: 1.0em;
+	padding: 1.5em 1em;
+	text-align: center;
+}
+	/* 1020px = based on our page's max-width 850px with "padding: 5% 10%" (i.e. 120% * 850px) */
+	@media only screen and (min-width: 1020px) {
+		div.page.translate div.cover {
+			font-size: 52px;
+		}
+	}
+div.page.translate h2 {
+	font-size: 1.5em;
+	/*border-bottom: 4px solid lightgray;*/
+	/*width: 90%;*/
+	/*margin: auto;*/
+	/*display: block;*/
+	text-align: center;
+}
+div.page.translate h3 {
+	font-size: 1.35em;
+}
+div.page.translate h2 span.source {
+	border-bottom: 4px solid #2e8540;
+	border-top: 4px solid #2e8540;
+	padding: 0.1em 0.4em;
+	background: #e7f4e4;
+	white-space: nowrap;
+	line-height: 2em;
+}
+div.page.translate ul li em {
+	color: #999;
+	white-space: nowrap;
+}
+
+/**/
+div.page .subnotes {
+	font-style: italic;
+	color: #666;
+}
+
+/* TEMP PLACEHOLDERS */
+.wip, img.wip {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+/* Donation Button */
+a.donation.button {
+	text-align: center;
+	display: block;
+}
+a.donation.button img {
+	margin: auto;
+	transition: 0.2s;
+}
+a.donation.button:hover {
+	border-bottom: none;
+}
+a.donation.button:hover img {
+	-webkit-filter: drop-shadow(5px 5px 5px gray );
+	filter: drop-shadow(5px 5px 5px gray);
+	transition: 0.2s;
+}
+table.vertical-separator tr td {
+	padding: 0 5px;
+}
+table.vertical-separator tr td:first-child {
+	border-right: 2px solid darkgray;
+}

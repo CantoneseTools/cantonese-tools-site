@@ -1,0 +1,17 @@
+html {
+  color: #333;
+}
+h1, h2, h3, h4 {
+	color: #000;
+}
+table {
+	table-layout: fixed;
+	width: 100%;
+}
+table, table tr, table td, table th {
+	border: 1px solid;
+}
+a:hover {
+	border-bottom: 4px solid;
+	text-decoration: none;
+}
