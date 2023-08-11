@@ -45,17 +45,20 @@
 		<div class="section-link"><a href="#type">
 			<span class="fa"></span><span class="description">Type</span><span class="status weak">~</span></a></div>
 		<div class="section-link"><a href="#listen">
-			<span class="fa"></span><span class="description">Listen</span><span class="status weak">~</span></a></div>
+			<span class="fa"></span><span class="description">Listen*</span><span class="status weak">~</span></a></div>
 		<div class="section-link"><a href="#dictate">
-			<span class="fa"></span><span class="description">Dictate</span><span class="status weak">~</span></a></div>
+			<span class="fa"></span><span class="description">Dictate**</span><span class="status weak">~</span></a></div>
 		<div class="section-link"><a href="#assistant">
 			<span class="fa"></span><span class="description">Assistant</span><span class="status none">x</span></a></div>
 	</div>
 	<p>
-		<em>Update: Windows 11 now supports Cantonese Text-to-Speech, and Speech-to-Text (ASR).</em>
+		<em>This guide was written to work for Windows 11, Windows 10, and Windows 7.</em>
 	</p>
 	<p>
-		<em>This guide is written for Windows 10. However, most steps here will also likely work for Windows 7.</em>
+		<em>* Windows can technically read out Cantonese text (Text-to-Speech). However, a 3rd party app is required to do this easily.</em>
+	</p>
+	<p>
+		<em>** Windows 11 supports Cantonese Dictation (Speech-to-Text). However, the majority of Windows users are on Windows 10, which does not support Cantonese dictation.</em>
 	</p>
 
 	<hr>
@@ -172,74 +175,35 @@
 	<hr>
 	<div id="listen"></div>
 	<h2>Listen (TTS)</h2>
-	<p>To get your Windows computer to read out Cantonese Chinese text (Text to Speech):</p>
+	<p>Windows can read out Cantonese Chinese text (Text to Speech). However, to do this easily, a 3rd party program is required.</p>
+	<p>To get started:</p>
 	<ol>
-		<li>Go to <strong>CONTROL PANEL > Ease of Access > Speech Recognition > Text to Speech</strong>.</li>
-		<li>Set the Text-to-Speech Voice to <strong>[ Microsoft Tracy Desktop - Chinese (Traditional, HongKong SAR) ]</strong><br>
-			<em>(If you can't see the voice, go to: SETTINGS > Time & Language > Language > Add a preferred language > 中文 (香港) (Cantonese) )</em>
+		<li>
+			Check to make sure you have the Chinese (Traditional, Hong Kong SAR) language pack installed at: <strong>Settings > Time & Language > Add a language > Chinese (Traditional, Hong Kong SAR)</strong>
 		</li>
-		<img class="expandable" src="images/windows/text-to-speech-cantonese-control-panel.png" alt="Image showing the Windows Control Panel to configure Text-to-Speech Voices.">
-
-		<li><br>Choose between 2 Options for running Cantonese Text-to-Speech:<br>
-			<table class="vertical-separator">
-				<tr style="text-align:center">
-					<td><strong>A.</strong></td>
-					<td><strong>B.</strong></td>
-				</tr>
-				<tr>
-					<td>
-						A Program that will read out Cantonese Text every time it's copied. <br><em>(To stop it reading out, you have to close the program.)</em>
-					</td>
-					<td>
-						A Button in your task bar that will read out Short selected Cantonese Text when clicked. <em>(Limited to short paraphraphs)</em>
-					</td>
-				</tr>
-			</table>
+		<img class="expandable" src="images/windows/general-cantonese-chinese-language-pack-windows-11--settings-time-and-language.png" alt="Image showing Windows Settings for 'Time & Language'. A modal shows Chinese (Traditional, Hong Kong SAR) is selected.">
+		<li>If you are on Windows 10 or older (skip this if you are on Windows 11 or newer):</li>
+		<ul>
+			<li> Go to <strong>CONTROL PANEL > Ease of Access > Speech Recognition > Text to Speech</strong>.</li>
+			<li>Set the Text-to-Speech Voice to <strong>[ Microsoft Tracy Desktop - Chinese (Traditional, HongKong SAR) ]</strong><br>
+			</li>
+			<img class="expandable" src="images/windows/text-to-speech-cantonese-control-panel.png" alt="Image showing the Windows Control Panel to configure Text-to-Speech Voices.">
+		</ul>
+		<li>
+			<strong>Download & Install</strong> <a href="https://sourceforge.net/projects/simplettsreader/" target="_blank">Simple TTS Reader</a>
 		</li>
-		<li><br>
-			<table class="vertical-separator">
-				<tr>
-					<td>
-						<strong>Download & Install</strong> <a href="https://sourceforge.net/projects/simplettsreader/" target="_blank">Simple TTS Reader</a>
-					</td>
-					<td>
-						<strong>Save</strong> <a href="https://github.com/CantoneseTools/windows-tts-button/raw/main/output/Text-to-Speech%203.exe">Text-to-Speech.exe</a> beta program to your computer (e.g. to C:\Program Files\). <em>(source code on <a href="https://github.com/CantoneseTools/windows-tts-button">Github</a>)</em>
-					</td>
-				</tr>
-			</table>
+		<li>
+			<p>Open the program. In the list of voices, select "Microsoft Tracy Desktop - Chinese (Traditional, HongKong SAR)".</p>
+			<img class="expandable" src="images/windows/tts-simple-tts-reader--cantonese-chinese-traditional-hongkong-sar.png" alt="Simple TTS Reader on Windows 11, showing a window with the language: Cantonese Chinese Traditional Hong Kong SAR selected.">
+			<em>(If you don't see "Microsoft Tracy", try repeating step 2 and restarting your computer.)</em>
 		</li>
-		<li><br>
-			<table class="vertical-separator">
-				<tr>
-					<td>
-						<p>Open the program. In the list of voices, select "Microsoft Tracy Desktop - Chinese (Traditional, HongKong SAR)".</p>
-						<em>(If you don't see "Microsoft Tracy", try repeating step 2 and restarting your computer.)</em>
-					</td>
-					<td>
-						Right-Click on the program, and select <strong>'Pin to Taskbar'</strong>.</li>
-						<img class="expandable" src="images/windows/text-to-speech-cantonese-pin-to-taskbar.png" alt="Image showing the Right-Click menu of a program, and how to Pin it to Taskbar.">
-					</td>
-				</tr>
-			</table>
+		<li>
+			<p>Now, you can <strong>Select</strong> Cantonese Text and have it be read out loud by <strong>Copying</strong> it (Control+C, or, Right-Click > Copy).</p>
+			<img class="expandable" src="images/windows/tts-windows-11-cantonese-text-to-speech-via-simple-tts-reader.png" alt="Simple TTS Reader App on Windows 11, next to the Notepad App. The Cantonese option is selected, and Cantonese text is highlighted with a copy button next to it.">
+			<p><em>To stop text from being read out every time it's copied, you can close the program or reduce its volume.</em></p>
+			<p><em>(If the program is reading out text, but you can't find it, it might be in the "System Tray". The System Tray is on the Bottom-Right of the screen.)</em></p>
 		</li>
 
-		<li><br>
-			<table class="vertical-separator">
-				<tr>
-					<td>
-						<p>Now, you can <strong>Select</strong> Cantonese Text and have it be read out loud by <strong>Copying</strong> it (Control+C, or, Right-Click > Copy).</p>
-						<p><em>To stop text from being read out every time it's copied, you can close the program or reduce its volume.</em></p>
-						<p><em>(If the program is reading out text, but you can't find it, it might be in the "System Tray". The System Tray is on the Bottom-Right of the screen.)</em></p>
-					</td>
-					<td>
-						<p>Now, you can <strong>Select</strong> short Cantonese text and have it read out in by clicking on the program in the <strong>Taskbar</strong>.</p>
-						<img class="expandable" src="images/windows/text-to-speech-cantonese-activation.png" alt="Image showing 1. the Selection of Cantonese text, 2. a Windows TTS button to read out the selected text.">
-
-						<p><em>Note: This program is in beta, and is currently limited to short parapgraphs. It can not read entire news articles yet.</em></p>
-					</td>
-				</tr>
-			</table>
-		</li>
 	</ol>
 
 	
@@ -248,36 +212,42 @@
 	<hr>
 	<div id="dictate"></div>
 	<h2>Dictate</h2>
-	<p>Cantonese dictation (speech recognition) is currently not implemented properly in Windows. We recommend using third-party applications for Cantonese dictation on Windows.</p>
 
-	<p><strong>To dictate Cantonese in a Word Processor</strong> (Google Docs):</p>
+	<p>Microsoft added Cantonese dictation (speech recognition, speech-to-text) in Windows 11. <em>(Windows 10 and older do not actually support Cantonese dictation, even though Windows 10 lists it as part of its Cantonese language pack.)</em></p>
+
+	<p>To input Cantonese by dictating it on your Windows PC:</p>
 	<ol>
-		<li>Open a <a href="https://doc.new">Google Doc</a>.</li>
-		<li>Click <strong>Tools > Voice Typing > 中文 (香港)</strong>.</li>
+		<li>Make sure the Cantonese Language Pack is installed. To install it:</li>
+		<ul>
+			<li>Go to <strong>Settings > Time & Language > Add a language > Chinese (Traditional, Hong Kong SAR)</strong></li>
+			<img class="expandable" src="images/windows/general-cantonese-chinese-language-pack-windows-11--settings-time-and-language.png" alt="Image showing Windows Settings for 'Time & Language'. A modal shows Chinese (Traditional, Hong Kong SAR) is selected.">
+		</ul>
 	</ol>
-	<p><em>Note: Microsoft 365 Dictation (including Microsoft Word), do not currently have support for Cantonese Dictation.</em></p>
 
-	<p><strong>To dictate Cantonese on Websites</strong> (via a Freemimum Chrome Extension):</p>
-	<ul>
-		<li>The <strong><a href="https://dictanote.co/voicein/">Voice in Voice Typing</a></strong> Chrome Browser extension can be used for free on certain websites. However, dictation on some major websites costs $6/month. <br><a href="https://support.dictanote.co/hc/en-us/articles/360033920231">See a list of the sites they support.</a></li>
-	</ul>
-	<p><em>Note: Even though Windows gives the impression that it supports Cantonese Speech recognition when the official Windows Cantonese language pack is downloaded, this is not actually true. Cantonese Speech Recognition can NOT be enabled in Modern Windows Text Dictation, nor Traditional Windows Speech Recognition. This is likely due to a bug on Microsoft’s end.</em></p>
+	<p>Now, to dictate Cantonese:</p>
+	<ol>
+		<li>At the end of your Taskbar (usually in the bottom-right of your screen), change the <strong>“Input Method”</strong> to any input that says <strong>“Chinese (Traditional, Hong Kong SAR)”</strong>.</li>
+		<img class="expandable" src="images/windows/stt-windows-11-taskbar-input-method-how-to-switch-to-cantonese.png" alt="Windows desktop showing the Language Selector menu open. Chinese (Traditional, Hong Kong SAR) is highlighted.">
+		<li>Open Notepad</li>
+		<li>Activate Voice Typing (Dictation) by pressing the "Window Logo" key and "H" key together.</li>
+		<img class="expandable" src="images/windows/stt-windows-11-cantonese-dictation-listening-speech-to-text.png" alt="Windows desktop showing the Voice Dictation Toolbar with a 'Listening…' message on top of it. Next to it is Notepad with the Cantonese phrase for Have you eaten yet.">
+	</ol>
 
-	<p>If you'd like to see Microsoft support Cantonese Dictation – <strong>please let Microsoft know.</strong></p>
-	<ul><li>You can do this by opening the <strong>Feedback Hub</strong> app. Then you can write your own feedback, or copy the following: <br><em>"Please fix Cantonese Speech-to-Text on Windows. Dictation is included in the official Windows Language Pack (中文(香港)), but is not activated."</em></li></ul>
+	<p>Now instead of typing, you can speak Cantonese Chinese to your Mac and have it write it down for you.</p>
 
 	<hr>
 	<div id="assistant"></div>
 	<h2>Cortana</h2>
-	<p>Microsoft’s Cortana does not currently support Cantonese.</p>
+	<p>Microsoft’s Voice Assistant, Cortana, is being deprecated. It is being replaced by Bing Chat.</p>
+	<p>Bing Chat does not currently support Cantonese Chinese.</p>
 
 	<hr>
 	<div id="footnotes"></div>
 	<h2>Footnotes</h2>
 	<div class="subnotes">
 		<p>
-			Note: The information here is based on Windows 10 (version 1909).
-			<br> Page last updated Mar 2021. 
+			Note: The information here is based on Windows 11 and Windows 10 (version 1909).
+			<br> Page last updated August 2023.
 		</p>
 	</div>
 
